@@ -1,0 +1,230 @@
+/* ---- reset ---- */
+
+body {
+	margin: 0;
+	font: normal 75% 'Mali', cursive;
+    overflow:hidden;
+    color: white;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#681652 , #1f031b , #4b1151 , #5b0f81 , #310470 );
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    /*position: absolute;*/
+    cursor: pointer;
+    /*top: calc(50% - 150px);*/
+    /*left: calc(50% - 150px);*/
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: .5s all;
+    -webkit-animation: glow 5s ease-in-out infinite alternate;
+    -moz-animation: glow 5s ease-in-out infinite alternate;
+    animation: glow 5s ease-in-out infinite alternate;
+    object-fit: cover;
+}
+
+@-webkit-keyframes glow {
+  from {
+      box-shadow:
+        inset 0 0 50px rgb(184, 180, 180),
+        inset 20px 0 80px rgb(129, 19, 0),
+        inset -20px 0 80px rgb(255, 166, 0),
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px rgb(21, 255, 0),
+        0 0 50px #fff,
+        -10px 0 80px rgb(0, 255, 234),
+        10px 0 80px rgb(255, 230, 0);
+  }
+
+  to {
+     box-shadow:
+        inset 0 0 50px #ffffff,
+        inset -20px 0 80px #ff7000,
+        inset 20px 0 80px #ecf000,
+        inset -20px 0 300px #4fff09,
+        inset 20px 0 300px #001cf0,
+        0 0 50px #ffffff,
+        -10px 0 80px #001cf0,
+        10px 0 80px #0ff;
+  }
+}
+
+h1{
+    top: calc(67% - 150px);
+    left: calc(48% - 150px);
+}
+
+
+   
+    
+
+
+.sections {
+    /*position: absolute;*/
+    float: left;
+    padding: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    position: absolute;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3 , 1fr);
+    grid-gap: 5px;
+    grid-template-areas: "picture picture picture"
+                        "name name name"
+                        "work social communities";
+}
+
+.item {
+    padding: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.subsection {
+    text-decoration: none;
+}
+.picture{
+    grid-area: picture;
+    grid-row-start: 1;
+    gird-row-end: 1;
+}
+
+.name{
+    grid-area: name;
+    font-size: 3em;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-weight: bold;
+    text-align: center;
+    /*position: absolute;*/
+}
+
+.work{
+    grid-area: work;
+}
+
+.social{
+    grid-area: social;
+}
+
+.communities{
+    grid-area: communities;
+}
+
+.ico{
+    width: 25px;
+    height: 25px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+@supports (display: grid) {
+  .container > * {
+    margin: 0;
+  }
+}
+
+/*desktop first*/
+
+@media screen and (max-width:320px) {
+    .container{
+        display: grid;
+        grid-template: repeat(1, 1fr)/ repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 0px;
+        grid-template-areas: "picture"
+                            "name"
+                            "work"
+                            "social"
+                            "communities";
+        align-items: center;
+    }
+
+    .name{
+        grid-area: name;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        /*position: absolute;*/
+    }
+
+    .profile-pic{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: .5s all;
+        -webkit-animation: glow 5s ease-in-out infinite alternate;
+        -moz-animation: glow 5s ease-in-out infinite alternate;
+        animation: glow 5s ease-in-out infinite alternate;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        display: grid;
+        grid-template: repeat(1, 1fr)/ repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 0px;
+        grid-template-areas: "picture"
+                            "name"
+                            "work"
+                            "social"
+                            "communities";
+        align-items: center;
+    }
+
+    .name{
+        grid-area: name;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-align: center;
+        /*position: absolute;*/
+    }
+
+    .profile-pic{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        transition: .5s all;
+        -webkit-animation: glow 5s ease-in-out infinite alternate;
+        -moz-animation: glow 5s ease-in-out infinite alternate;
+        animation: glow 5s ease-in-out infinite alternate;
+    }
+}
