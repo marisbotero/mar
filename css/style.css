@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	font: normal 75% 'Mali', cursive;
+	font: normal 75% 'Arial', cursive;
     overflow:hidden;
     color: white;
 }
@@ -19,7 +19,7 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#aa17e4 , #440369 , #6d3cc9 , #eb7ed3 , #460564 );
+	background: linear-gradient(#570a75 , #440369 , #6d3cc9 , #11020e , #460564 );
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -84,7 +84,7 @@ h1{
 }
 
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: white;
 }
 
