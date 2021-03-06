@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	font: normal 75% 'Arial', cursive;
+	font: normal 55% 'Calibre', cursive;
     overflow:hidden;
     color: white;
 }
@@ -19,7 +19,7 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#570a75 , #440369 , #6d3cc9 , #11020e , #460564 );
+	background: linear-gradient(#bc5fe0 , #c67af1 , #6d3cc9 , #4e0640 , #460564 );
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -55,14 +55,14 @@ img:hover {
 @-webkit-keyframes glow {
   from {
       box-shadow:
-        inset 0 0 50px #fff,
-        inset 20px 0 80px #f0f,
-        inset -20px 0 80px #0ff,
-        inset 20px 0 300px #f0f,
-        inset -20px 0 300px #0ff,
-        0 0 50px #fff,
-        -10px 0 80px #f0f,
-        10px 0 80px #0ff;
+        inset 0 0 50px rgb(146, 209, 140),
+        inset 20px 0 80px rgb(221, 221, 1),
+        inset -20px 0 80px rgb(255, 174, 0),
+        inset 20px 0 300px rgb(166, 255, 0),
+        inset -20px 0 300px rgb(17, 202, 178),
+        0 0 50px rgb(214, 19, 133),
+        -10px 0 80px rgb(255, 166, 0),
+        10px 0 80px rgb(255, 123, 0);
   }
 
   to {
