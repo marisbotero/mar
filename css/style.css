@@ -60,7 +60,7 @@ img:hover {
         inset -20px 0 80px rgb(255, 0, 242),
         inset 20px 0 300px rgb(166, 255, 0),
         inset -20px 0 300px rgb(17, 202, 178),
-        0 0 50px rgb(87, 19, 214),
+        0 0 50px rgb(131, 184, 8),
         -10px 0 80px rgb(0, 217, 255),
         10px 0 80px rgb(0, 255, 179);
   }
@@ -71,9 +71,9 @@ img:hover {
         inset -20px 0 80px #ff00dd,
         inset 20px 0 80px #f000a0,
         inset -20px 0 300px #09fffd,
-        inset 20px 0 300px #001cf0,
+        inset 20px 0 300px #0b9fb3,
         0 0 50px #ffffff,
-        -10px 0 80px #001cf0,
+        -10px 0 80px #00f0a8,
         10px 0 80px #0ff;
   }
 }
