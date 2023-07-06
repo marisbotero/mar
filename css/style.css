@@ -19,7 +19,7 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#d7bfdece , #e9a0c8 , #efe47f , #e39bebce , #5d6dfa );
+	background: linear-gradient(#af48eace , #750ac7 , #210235 , #9b24a8ce , #e80de8 );
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -56,11 +56,11 @@ img:hover {
   from {
       box-shadow:
         inset 0 0 50px rgb(140, 209, 194),
-        inset 20px 0 80px rgb(1, 221, 166),
+        inset 20px 0 80px rgb(1, 63, 221),
         inset -20px 0 80px rgb(255, 0, 242),
         inset 20px 0 300px rgb(166, 255, 0),
-        inset -20px 0 300px rgb(17, 202, 178),
-        0 0 50px rgb(131, 184, 8),
+        inset -20px 0 300px rgb(17, 29, 202),
+        0 0 50px rgb(8, 184, 146),
         -10px 0 80px rgb(0, 217, 255),
         10px 0 80px rgb(0, 255, 179);
   }
@@ -68,7 +68,7 @@ img:hover {
   to {
      box-shadow:
         inset 0 0 50px #ffffff,
-        inset -20px 0 80px #ff00dd,
+        inset -20px 0 80px #ffe100,
         inset 20px 0 80px #f000a0,
         inset -20px 0 300px #09fffd,
         inset 20px 0 300px #0b9fb3,
@@ -84,8 +84,8 @@ h1{
 }
 
 body {
-    font-family:  sans-serif;
-    color:black;
+    font-family: cursive;
+    color:white;
     
 }
 
@@ -215,3 +215,169 @@ p{
         animation: glow 5s ease-in-out infinite alternate;
     }
 }
+
+div.parent{
+    width:300px;
+    height:300px;
+    border:1px solid   transparent;
+    position:relative;
+    left:150px;
+    top:-150px;
+  }
+    div.leave1{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(0deg);
+    left:200px;
+    top:210px;  
+  }
+  
+  div.leave2{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(60deg);
+    left:230px;
+    top:210px;  
+  }
+   div.leave3{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(120deg);
+    left:244px;
+    top:230px;  
+  }
+   div.leave4{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(180deg);
+    left:240px;
+    top:255px;  
+  }
+   div.leave5{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(240deg);
+    left:210px;
+    top:260px;  
+  }
+   div.leave6{
+    border:1px solid #FF0066;
+    width:50px;
+    height:50px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    background-color:#FF0066;
+    position:absolute;
+    -webkit-transform:rotate(300deg);
+    left:190px;
+    top:240px;  
+}
+  
+  
+  div.circ{
+    width:20px;
+    height:20px;
+    border:1px solid #FFFF47;
+    background-color:#FFFF47;
+    border-radius:100%;
+    position:absolute;
+    top:250px;
+    left:235px;
+}
+  div.leave7{
+    width:5px;
+    height:170px;
+    background-color:rgb(24, 164, 24);
+    border:1px solid rgb(31, 179, 31);
+    position:absolute;
+    top:680px;
+    left:250px;
+    z-index:-1;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    border-bottom:
+  }  
+  div.leave8{
+    background-color:rgb(116, 208, 11);
+    width:60px;
+    height:60px;
+    border-top-right-radius:100%;
+    border-bottom-left-radius:100%;
+    position:absolute;
+    top:330px;
+    left:195px;
+    
+  }
+    
+  div.leave9{
+    background-color:rgb(51, 226, 51);
+    width:60px;
+    height:60px;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    position:absolute;
+    top:370px;
+    left:255px; 
+  }
+
+/* Heart beat animation */
+.heart{
+    /*position: absolute;*/
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .heart::before {
+    position: absolute;
+    background-color: pink;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  
+  .heart::after {
+    position: absolute;
+    background-color: pink;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 25px;
+    border-radius: 50%;
+  }
+  
