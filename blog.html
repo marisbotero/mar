@@ -2,95 +2,57 @@
 <html>
 
 <head>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <title>Bootstrap Example</title>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Art</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="shortcut icon" type="image/svg" href="assets/images/cookie.svg" />
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-
-    <script src="https://kit.fontawesome.com/803630a332.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Art Gallery</title>
+    <style>
+        img {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="bg">
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4 titleLeftSections">
-                        
-                        <h1 class="title">Arte</h1>
-                        <img class="fontSections" src="assets/images/art3.png">
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item">
-                              <img src="assets/images/1.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="First slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="assets/images/2.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Second slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/3.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/4.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/5.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/6.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/7.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                            <div class="carousel-item active">
-                              <img src="assets/images/8.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="Third slide" style="width: 600px; height: 400px;">
-                            </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                        </div>
-                        
-                        
-
-                     </div>
-                    <div class="col-sm-4"></div>
-                </div>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">My Art Gallery</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <img src="assets/images/1.png" class="img-fluid rounded" alt="Artwork 1">
             </div>
+            <div class="col">
+                <img src="assets/images/2.png" class="img-fluid rounded" alt="Artwork 2">
+            </div>
+            <div class="col">
+                <img src="assets/images/3.png" class="img-fluid rounded" alt="Artwork 3">
+            </div>
+            <div class="col">
+                <img src="assets/images/4.jpg" class="img-fluid rounded" alt="Artwork 4">
+            </div>
+            <div class="col">
+                <img src="assets/images/5.jpg" class="img-fluid rounded" alt="Artwork 5">
+            </div>
+            <div class="col">
+                <img src="assets/images/6.jpg" class="img-fluid rounded" alt="Artwork 6">
+            </div>
+            <div class="col">
+                <img src="assets/images/7.jpg" class="img-fluid rounded" alt="Artwork 7">
+            </div>
+            <div class="col">
+                <img src="assets/images/8.png" class="img-fluid rounded" alt="Artwork 8">
+            </div>
+            <div class="col">
+              <img src="assets/images/9.jpg" class="img-fluid rounded" alt="Artwork 8">
+          </div>
+          <div class="col">
+            <img src="assets/images/10.jpg" class="img-fluid rounded" alt="Artwork 8">
+        </div>
         </div>
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
