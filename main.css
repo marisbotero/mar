@@ -108,6 +108,27 @@ html, body {
     66% { transform: translate(-3%, 1%) scale(0.97); }
 }
 
+/* ========== Scroll reveal animations ========== */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
 /* ========== Layout estilo referencia: header + hero + about + art + contact ========== */
 
 .top-header {
