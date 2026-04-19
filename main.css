@@ -475,6 +475,69 @@ body.lang-en .lang-en {
     z-index: 1;
 }
 
+/* Featured drop (fanzine hero on tienda page) */
+.featured-drop {
+    background: var(--color-card-bg);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin: 1.5rem 0 2.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(144, 85, 162, 0.08);
+}
+
+.featured-drop-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--color-bg-warm);
+    aspect-ratio: 1;
+}
+
+.featured-drop-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-drop-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--color-gold);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.featured-drop-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin: 0 0 1rem 0;
+    color: var(--color-text);
+}
+
+.featured-drop-desc {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.featured-drop-price {
+    color: var(--color-text-soft);
+    margin-bottom: 1.25rem;
+}
+
+.featured-drop-price em {
+    color: var(--color-accent);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.shop-subsection-title {
+    margin: 2.5rem 0 1rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
 .shop-page .page-title {
     margin-bottom: 0.5rem;
 }

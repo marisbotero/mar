@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arte — Maris Botero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Art Gallery</title>
-    <style>
-        img {
-            object-fit: cover;
-            height: 300px;
-            width: 100%;
-        }
-    </style>
+    <meta name="description" content="Galería de arte generativo de Maris Botero.">
+    <link rel="shortcut icon" type="image/svg" href="" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/803630a332.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="container my-5">
-        <h1 class="text-center mb-4">My Art Gallery</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <img src="assets/images/1.png" class="img-fluid rounded" alt="Artwork 1">
-            </div>
-            <div class="col">
-                <img src="assets/images/2.png" class="img-fluid rounded" alt="Artwork 2">
-            </div>
-            <div class="col">
-                <img src="assets/images/3.png" class="img-fluid rounded" alt="Artwork 3">
-            </div>
-            <div class="col">
-                <img src="assets/images/4.jpg" class="img-fluid rounded" alt="Artwork 4">
-            </div>
-            <div class="col">
-                <img src="assets/images/5.jpg" class="img-fluid rounded" alt="Artwork 5">
-            </div>
-            <div class="col">
-                <img src="assets/images/6.jpg" class="img-fluid rounded" alt="Artwork 6">
-            </div>
-            <div class="col">
-                <img src="assets/images/7.jpg" class="img-fluid rounded" alt="Artwork 7">
-            </div>
-            <div class="col">
-                <img src="assets/images/8.png" class="img-fluid rounded" alt="Artwork 8">
-            </div>
-            <div class="col">
-              <img src="assets/images/9.jpg" class="img-fluid rounded" alt="Artwork 8">
-          </div>
-          <div class="col">
-            <img src="assets/images/10.jpg" class="img-fluid rounded" alt="Artwork 8">
+<body class="lang-es">
+    <div class="bg">
+        <div class="bg-ambient" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
         </div>
-        <div class="col">
-          <img src="assets/images/de2.png" class="img-fluid rounded" alt="Artwork 8">
-      </div>
-      <div class="col">
-        <img src="assets/images/20.jpg" class="img-fluid rounded" alt="Artwork 8">
-    </div>
+        <header class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a href="index.html" class="logo-link">
+                            <h1 class="logo-script">Maris</h1>
+                        </a>
+                    </div>
+                    <nav class="col-auto main-nav" aria-label="Navegación principal">
+                        <a href="about_me.html"><span class="lang-es">Sobre mí</span><span class="lang-en">About Me</span></a>
+                        <a href="blog.html"><span class="lang-es">Arte</span><span class="lang-en">Art</span></a>
+                        <a href="tienda.html"><span class="lang-es">La tiendita</span><span class="lang-en">Shop</span></a>
+                        <a href="talks.html"><span class="lang-es">Charlas</span><span class="lang-en">Talks</span></a>
+                        <a href="index.html#contact"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a>
+                        <span class="lang-switcher" aria-label="Idioma">
+                            <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+                            <span class="lang-sep">|</span>
+                            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                        </span>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-        </div>
-    </div>
+        <main class="gallery-page">
+            <section class="section">
+                <div class="container">
+                    <h1 class="section-title script-title text-center">
+                        <span class="lang-es">Arte</span><span class="lang-en">Art</span>
+                        <span class="title-deco" aria-hidden="true">✦</span>
+                    </h1>
+                    <p class="section-sub text-center" style="margin-bottom: 2rem;">
+                        <span class="lang-es">Piezas generativas, ilustraciones y experimentos con código.</span>
+                        <span class="lang-en">Generative pieces, illustrations and code experiments.</span>
+                    </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="gallery-full">
+                        <figure class="gallery-item"><img src="assets/images/1.png" alt="Artwork 1" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/2.png" alt="Artwork 2" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/3.png" alt="Artwork 3" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/4.jpg" alt="Artwork 4" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/5.jpg" alt="Artwork 5" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/6.jpg" alt="Artwork 6" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/7.jpg" alt="Artwork 7" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/8.png" alt="Artwork 8" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/9.jpg" alt="Artwork 9" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/10.jpg" alt="Artwork 10" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/de2.png" alt="Artwork" loading="lazy"></figure>
+                        <figure class="gallery-item"><img src="assets/images/20.jpg" alt="Artwork" loading="lazy"></figure>
+                    </div>
+
+                    <p class="text-center" style="margin-top: 2rem;">
+                        <a href="tienda.html" class="btn-github">
+                            <span class="lang-es">¿Te gusta algo? Pásate por la tiendita →</span>
+                            <span class="lang-en">Like something? Stop by the shop →</span>
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
