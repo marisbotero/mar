@@ -4,240 +4,259 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Maris Botero — Data Scientist &amp; Generative Artist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Maris Botero — Científica de datos y artista generativa. Creo con datos, código y un poquito de magia.">
-    <link rel="shortcut icon" type="image/svg" href="" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="description" content="Maris Botero — Data Science Engineer. IA, creative coding, arte generativo, charlas y libros.">
+    <title>Maris Botero — Data Science Engineer</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Satisfy&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/803630a332.js" crossorigin="anonymous"></script>
-    <!-- p5.js for ambient generative sketch -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 </head>
 
-<body class="lang-es">
-    <div class="bg">
-        <div class="bg-ambient" aria-hidden="true">
-            <span class="blob blob-1"></span>
-            <span class="blob blob-2"></span>
-            <span class="blob blob-3"></span>
-        </div>
-        <!-- p5.js ambient sketch sits above blobs, below content -->
-        <div id="p5-ambient" aria-hidden="true"></div>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Inicio">Maris Botero <span>✦</span></a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a class="active" href="#inicio">Inicio</a>
+            <a href="#experiencia">IA</a>
+            <a href="talks.html">Charlas</a>
+            <a href="blog.html">Arte</a>
+            <a href="#playground">Playground</a>
+            <a href="tienda.html">Libros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="theme-dot" type="button" aria-label="Cambiar detalle mágico">☼</button>
+    </header>
 
-        <header class="top-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <a href="index.html" class="logo-link">
-                            <h1 class="logo-script">Maris</h1>
-                        </a>
-                    </div>
-                    <nav class="col-auto main-nav" aria-label="Navegación principal">
-                        <a href="#about"><span class="lang-es">Sobre mí</span><span class="lang-en">About Me</span></a>
-                        <a href="blog.html"><span class="lang-es">Arte</span><span class="lang-en">Art</span></a>
-                        <a href="tienda.html"><span class="lang-es">La tiendita</span><span class="lang-en">Shop</span></a>
-                        <a href="talks.html"><span class="lang-es">Charlas</span><span class="lang-en">Talks</span></a>
-                        <a href="#contact"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a>
-                        <span class="lang-switcher" aria-label="Idioma">
-                            <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
-                            <span class="lang-sep">|</span>
-                            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-                        </span>
-                    </nav>
-                </div>
+    <main id="inicio">
+        <section class="hero">
+            <div class="sparkles" aria-hidden="true">
+                <span style="--x: 7%; --y: 34%; --d: 0s;">☆</span>
+                <span style="--x: 38%; --y: 19%; --d: .4s;">✧</span>
+                <span style="--x: 47%; --y: 62%; --d: .8s;">♡</span>
+                <span style="--x: 92%; --y: 27%; --d: 1.1s;">☆</span>
+                <span style="--x: 15%; --y: 72%; --d: 1.4s;">✦</span>
             </div>
-        </header>
 
-        <main>
-            <section class="hero-section">
-                <div class="container">
-                    <div class="row align-items-center g-4">
-                        <div class="col-lg-6 order-lg-1 order-2">
-                            <p class="hero-statement">
-                                <span class="lang-es">Soy Maris, científica de datos y artista generativa. Creo con datos, código y un poquito de magia.</span>
-                                <span class="lang-en">I'm Maris, a data scientist and generative artist. I create with data, code, and a little bit of magic.</span>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 order-lg-2 order-1 text-center">
-                            <img class="hero-illustration" src="assets/images/perfil.png" alt="Maris Botero" width="320" height="320" loading="eager">
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="hero-copy">
+                <p class="eyebrow">Hola, soy</p>
+                <h1>Maris</h1>
+                <p class="role">Data Science Engineer</p>
+                <p class="tags">AI • Creative Coding • Generative Art</p>
+                <p class="intro">Creo soluciones con datos, código y un poquito de <span>magia</span> ✨</p>
+                <a class="primary-link" href="#experiencia">Conoce mi historia ↓</a>
+            </div>
 
-            <section id="about" class="section about-section">
-                <div class="container">
-                    <h2 class="section-title script-title">
-                        <span class="lang-es">Sobre mí</span><span class="lang-en">About me</span>
-                        <span class="title-deco" aria-hidden="true">✦ ✦</span>
-                    </h2>
-                    <div class="row align-items-start g-4">
-                        <div class="col-lg-6">
-                            <div class="about-blocks">
-                                <div class="about-block">
-                                    <span class="about-icon" aria-hidden="true">✨</span>
-                                    <div>
-                                        <p class="about-lead">
-                                            <span class="lang-es">Algo hada por dentro, con credencial de científica de datos.</span>
-                                            <span class="lang-en">A bit of a fairy at heart, with a data scientist badge.</span>
-                                        </p>
-                                        <p class="about-sub">
-                                            <span class="lang-es">Me encanta donde se juntan arte, ciencia y tecnología. Crear y resolver problemas es lo que me mantiene curiosa.</span>
-                                            <span class="lang-en">I love where art, science and technology meet. Creating and solving problems is what keeps me curious.</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="about-block">
-                                    <span class="about-icon" aria-hidden="true">📊</span>
-                                    <div>
-                                        <p class="about-lead">
-                                            <span class="lang-es">Años armando modelos de machine learning, siempre con una vuelta creativa.</span>
-                                            <span class="lang-en">Years of building machine learning models, always with a creative twist.</span>
-                                        </p>
-                                        <p class="about-sub">
-                                            <span class="lang-es">Me inspiran los patrones de la naturaleza.</span>
-                                            <span class="lang-en">I find inspiration in the patterns of nature.</span>
-                                            <span class="star" aria-hidden="true"> ★</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="https://github.com/marisbotero" class="btn-github" target="_blank" rel="noopener">
-                                <span class="lang-es">Ver más en GitHub</span><span class="lang-en">See more on GitHub</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="art-grid">
-                                <a href="blog.html" class="art-grid-item">
-                                    <img src="assets/images/1.png" alt="Flow of Fire">
-                                    <span class="art-grid-title"><span class="lang-es">Flujo de fuego</span><span class="lang-en">Flow of Fire</span></span>
-                                </a>
-                                <a href="blog.html" class="art-grid-item">
-                                    <img src="assets/images/4.jpg" alt="Blossoms">
-                                    <span class="art-grid-title"><span class="lang-es">Flores</span><span class="lang-en">Blossoms</span></span>
-                                </a>
-                                <a href="blog.html" class="art-grid-item">
-                                    <img src="assets/images/6.jpg" alt="Radiance">
-                                    <span class="art-grid-title"><span class="lang-es">Resplandor</span><span class="lang-en">Radiance</span></span>
-                                </a>
-                                <a href="blog.html" class="art-grid-item">
-                                    <img src="assets/images/8.png" alt="Starry night">
-                                    <span class="art-grid-title"><span class="lang-es">Noche estrellada</span><span class="lang-en">Starry night</span></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-art">
+                <div class="network" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span>
                 </div>
-            </section>
+                <img src="assets/images/perfil.png" alt="Ilustración de Maris Botero" width="560" height="480" loading="eager">
+            </div>
+        </section>
 
-            <section class="section art-section">
-                <div class="container">
-                    <h2 class="section-title script-title"><span class="lang-es">Arte</span><span class="lang-en">Art</span></h2>
-                    <p class="section-sub">
-                        <span class="lang-es">Charlas y proyectos creativos</span><span class="lang-en">Talks &amp; creative projects</span>
-                    </p>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/jsconfmexico_MarisBotero%20(1).pdf" class="talk-card" target="_blank" rel="noopener">
-                                <span class="talk-icon" aria-hidden="true">✏️</span>
-                                <div>
-                                    <span class="talk-name">JSConf Mexico 2024</span>
-                                    <span class="talk-desc"><span class="lang-es">Arte generativo y creatividad computacional.</span><span class="lang-en">Generative art and computational creativity.</span></span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/Los%20secretos%20de%20la%20geometr%C3%ADa%20(2).pdf" class="talk-card" target="_blank" rel="noopener">
-                                <span class="talk-icon" aria-hidden="true"><i class="fab fa-github"></i></span>
-                                <div>
-                                    <span class="talk-name">PyConnect 2023</span>
-                                    <span class="talk-desc"><span class="lang-es">Los secretos de la geometría y los fractales con Python.</span><span class="lang-en">Exploring the secrets of geometry and fractals with Python.</span></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="https://www.youtube.com/watch?v=INj8ck8Ilbs" class="talk-card" target="_blank" rel="noopener">
-                                <span class="talk-icon" aria-hidden="true">🌱</span>
-                                <div>
-                                    <span class="talk-name">BoyaConf 2024</span>
-                                    <span class="talk-desc"><span class="lang-es">Contenedores e IA con Docker.</span><span class="lang-en">Navigating Containers: AI powered by Docker.</span></span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/%C2%A1Aventura%20en%20el%20Mundo%20del%20Arte%20M%C3%A1gico!.pdf" class="talk-card" target="_blank" rel="noopener">
-                                <span class="talk-icon star" aria-hidden="true">★</span>
-                                <div>
-                                    <span class="talk-name">PioKids 2024</span>
-                                    <span class="talk-desc"><span class="lang-es">Aventura en el mundo del arte mágico.</span><span class="lang-en">Adventure in the world of magical art.</span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="talks.html" class="link-more"><span class="lang-es">Ver todas las charlas →</span><span class="lang-en">View all talks →</span></a>
-                    </div>
-                </div>
-            </section>
+        <section class="section compact" aria-labelledby="hacer-title">
+            <div class="section-title">
+                <h2 id="hacer-title">Lo que hago</h2>
+                <span>— ♥ —</span>
+            </div>
 
-            <section id="shop" class="section shop-section">
-                <div class="container">
-                    <h2 class="section-title script-title">
-                        <span class="lang-es">La tiendita de Maris</span><span class="lang-en">Maris's little shop</span>
-                    </h2>
-                    <p class="section-sub shop-intro">
-                        <span class="lang-es">Un rinconcito donde comparto mis piezas de arte. Prints, ilustraciones y cosas hechas con cariño.</span>
-                        <span class="lang-en">A little corner where I share my art pieces. Prints, illustrations and things made with love.</span>
-                    </p>
-                    <div class="row g-4 shop-preview">
-                        <div class="col-6 col-md-4">
-                            <a href="tienda.html" class="product-card">
-                                <img src="assets/images/pixel.jpg" alt="">
-                                <span class="product-title"><span class="lang-es">Pixel — Fanzine Nº1 ✨</span><span class="lang-en">Pixel — Zine Nº1 ✨</span></span>
-                                <span class="product-price"><span class="lang-es">Edición limitada</span><span class="lang-en">Limited edition</span></span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="tienda.html" class="product-card">
-                                <img src="assets/images/1.png" alt="">
-                                <span class="product-title"><span class="lang-es">Flujo de fuego</span><span class="lang-en">Flow of Fire</span></span>
-                                <span class="product-price">—</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="tienda.html" class="product-card">
-                                <img src="assets/images/4.jpg" alt="">
-                                <span class="product-title"><span class="lang-es">Flores</span><span class="lang-en">Blossoms</span></span>
-                                <span class="product-price">—</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="tienda.html" class="btn-github"><span class="lang-es">Ver toda la tiendita →</span><span class="lang-en">Visit the full shop →</span></a>
-                    </div>
-                </div>
-            </section>
+            <div class="doing-grid">
+                <article class="doing-card">
+                    <div class="soft-icon purple">🤖</div>
+                    <h3>Construyo IA</h3>
+                    <p>Modelos, LLMs, agentes, anomalías y optimización para resolver problemas reales.</p>
+                    <a href="#experiencia">Ver experiencia →</a>
+                </article>
+                <article class="doing-card">
+                    <div class="soft-icon blue">🎙️</div>
+                    <h3>Comparto conocimiento</h3>
+                    <p>Charlas, talleres y mentorías para inspirar y empoderar a más personas en tecnología.</p>
+                    <a href="talks.html">Ver charlas →</a>
+                </article>
+                <article class="doing-card">
+                    <div class="soft-icon pink">🎨</div>
+                    <h3>Creo con código y a mano</h3>
+                    <p>Arte generativo, p5.js, dibujo, ilustración y experimentos visuales que cuentan historias.</p>
+                    <a href="blog.html">Ver arte →</a>
+                </article>
+            </div>
+        </section>
 
-            <section id="contact" class="section contact-section">
-                <div class="container text-center">
-                    <h2 class="section-title script-title"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h2>
-                    <nav class="social-nav" aria-label="Redes sociales">
-                        <a class="socialLink" href="https://github.com/marisbotero" aria-label="GitHub"><i class="fab fa-github-alt icoSocial"></i></a>
-                        <a class="socialLink" href="https://www.instagram.com/marisbot.art/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram icoSocial"></i></a>
-                        <a class="socialLink" href="https://twitter.com/marisbotero" aria-label="Twitter"><i class="fab fa-twitter icoSocial"></i></a>
-                        <a class="socialLink" href="https://www.linkedin.com/in/marisbotero/" aria-label="LinkedIn"><i class="fab fa-linkedin-in icoSocial"></i></a>
-                        <a class="socialLink" href="mailto:marisboterog@gmail.com" aria-label="Email"><i class="far fa-envelope icoSocial"></i></a>
-                    </nav>
+        <section id="experiencia" class="section" aria-labelledby="experiencia-title">
+            <div class="section-title">
+                <h2 id="experiencia-title">Experiencia en IA y datos</h2>
+                <span>— ☆ —</span>
+            </div>
+
+            <div class="experience-timeline">
+                <article class="experience-item featured">
+                    <div class="experience-date">2023 — 2026</div>
+                    <div>
+                        <h3>Data Science Engineer · Mercado Libre</h3>
+                        <p>Diseño y desarrollo soluciones de IA para retos de negocio a gran escala: interpretación de documentos jurídicos, optimización de cashback, detección de anomalías, agentes inteligentes y sistemas de soporte para decisiones.</p>
+                        <div class="skill-tags">
+                            <span>AI</span><span>Machine Learning</span><span>LLMs</span><span>Python</span><span>SQL</span><span>GCP</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-date">2025</div>
+                    <div>
+                        <h3>Learning Facilitator · Laboratoria</h3>
+                        <p>Facilitación de aprendizaje en data intelligence y Python.</p>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-date">2022 — 2023</div>
+                    <div>
+                        <h3>Tutor Data Science · Coderhouse</h3>
+                        <p>Acompañamiento en Python, Machine Learning y visualización de datos.</p>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-date">2019 — 2023</div>
+                    <div>
+                        <h3>Data Science · COMFAMA</h3>
+                        <p>Modelos de machine learning, analítica, automatización con Python, gobierno de datos y tableros para salud, talento humano y servicios financieros.</p>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-date">2018 — 2019</div>
+                    <div>
+                        <h3>Data Engineer · Bancolombia</h3>
+                        <p>Extracción y análisis de datos, y desarrollo de algoritmos de machine learning para riesgo crediticio.</p>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-date">2014 — 2018</div>
+                    <div>
+                        <h3>Software, datos y robótica</h3>
+                        <p>Desarrollo web, videojuegos, analítica, modelos de machine learning, formación en programación y proyectos de robótica con Arduino, Python, Unity e IoT.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="profile-links" aria-label="Enlaces de trayectoria">
+                <a href="https://www.linkedin.com/in/marisbotero/" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    Trayectoria profesional
+                </a>
+                <a href="https://github.com/marisbotero" target="_blank" rel="noopener">
+                    <i class="fab fa-github-alt" aria-hidden="true"></i>
+                    Código y workshops
+                </a>
+                <a href="https://www.instagram.com/marisbot.art/" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    Arte en Instagram
+                </a>
+            </div>
+        </section>
+
+        <section id="playground" class="section playground-section" aria-labelledby="playground-title">
+            <div class="section-title">
+                <h2 id="playground-title">Playground interactivo</h2>
+                <span>— ✦ —</span>
+            </div>
+
+            <div class="playground-card">
+                <div class="playground-copy">
+                    <h3>Dibuja con partículas</h3>
+                    <p>Un experimento pequeño con canvas: cambia la cantidad de puntos, el movimiento y el color para crear una mini galaxia generativa.</p>
+                    <button class="primary-link playground-button" type="button" id="randomize-art">Regenerar magia ↻</button>
                 </div>
-            </section>
-        </main>
-    </div>
+                <div class="controls" aria-label="Controles del playground">
+                    <label>
+                        Partículas
+                        <input id="particle-count" type="range" min="35" max="160" value="90">
+                    </label>
+                    <label>
+                        Movimiento
+                        <input id="particle-speed" type="range" min="1" max="10" value="4">
+                    </label>
+                    <label>
+                        Color
+                        <select id="particle-palette">
+                            <option value="pastel">Pastel</option>
+                            <option value="aurora">Aurora</option>
+                            <option value="starry">Noche estrellada</option>
+                        </select>
+                    </label>
+                </div>
+                <canvas id="magic-canvas" width="520" height="320" aria-label="Arte generativo interactivo"></canvas>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Resumen">
+            <div>
+                <strong>6 países</strong>
+                <span>Charlas listadas en Colombia, México, Panamá, Chile, Brasil y Bolivia</span>
+            </div>
+            <div>
+                <strong>2019 — 2024</strong>
+                <span>Trayectoria pública compartiendo conocimiento en eventos y comunidades</span>
+            </div>
+            <div>
+                <strong>9 charlas</strong>
+                <span>Selección destacada en la página de charlas</span>
+            </div>
+            <div>
+                <strong>IA + arte</strong>
+                <span>Temas sobre datos, Python, JavaScript, Docker y creatividad computacional</span>
+            </div>
+        </section>
+
+        <section class="section lower-grid" aria-label="Más sobre mi trabajo">
+            <article class="wide-card">
+                <div>
+                    <h2>Charlas</h2>
+                    <p>He participado en conferencias, meetups y comunidades compartiendo ideas sobre IA, datos y código.</p>
+                    <a href="talks.html">Ver todas las charlas →</a>
+                </div>
+                <img src="assets/images/bitmoji/talks.svg" alt="" loading="lazy">
+            </article>
+
+            <article class="wide-card">
+                <div>
+                    <h2>Arte generativo</h2>
+                    <p>Exploraciones visuales donde el dibujo, el código y la imaginación se convierten en colores, formas y movimiento.</p>
+                    <a href="#playground">Probar playground →</a>
+                </div>
+                <div class="mini-gallery" aria-hidden="true">
+                    <img src="assets/images/1.png" alt="">
+                    <img src="assets/images/4.jpg" alt="">
+                    <img src="assets/images/8.png" alt="">
+                </div>
+            </article>
+
+            <article class="wide-card">
+                <div>
+                    <h2>Tiendita</h2>
+                    <p>Libros, prints, stickers y obras como Pixel, una de mis piezas más reconocidas.</p>
+                    <a href="tienda.html">Visitar tienda →</a>
+                </div>
+                <img src="assets/images/pixel.png" alt="" loading="lazy">
+            </article>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <img src="assets/images/perfil.png" alt="" loading="lazy">
+        <div>
+            <h2>Conversemos ✨</h2>
+            <p>Estoy abierta a colaboraciones, charlas, proyectos y conversaciones que sumen.</p>
+            <nav class="social-nav" aria-label="Redes sociales">
+                <a href="https://www.linkedin.com/in/marisbotero/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/marisbotero" aria-label="GitHub"><i class="fab fa-github-alt"></i></a>
+                <a href="https://www.instagram.com/marisbot.art/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:marisboterog@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+            </nav>
+        </div>
+        <a class="back-top" href="#inicio">Arriba ↑</a>
+    </footer>
+
     <script src="main.js"></script>
-    <script src="assets/js/sketch.js"></script>
 </body>
 
 </html>
