@@ -4,204 +4,102 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Charlas — Maris Botero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Charlas y conferencias de Maris Botero.">
-    <link rel="shortcut icon" type="image/svg" href="" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="description" content="Charlas, talleres y conferencias de Maris Botero sobre IA, datos, arte generativo y creatividad computacional.">
+    <title>Charlas — Maris Botero</title>
+    <link rel="shortcut icon" type="image/svg" href="assets/images/cookie.svg">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Satisfy&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/803630a332.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="lang-es">
-    <div class="bg">
-        <div class="bg-ambient" aria-hidden="true">
-            <span class="blob blob-1"></span>
-            <span class="blob blob-2"></span>
-            <span class="blob blob-3"></span>
-        </div>
-        <header class="top-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <a href="index.html" class="logo-link">
-                            <h1 class="logo-script">Maris</h1>
-                        </a>
-                    </div>
-                    <nav class="col-auto main-nav" aria-label="Navegación principal">
-                        <a href="about_me.html"><span class="lang-es">Sobre mí</span><span class="lang-en">About Me</span></a>
-                        <a href="blog.html"><span class="lang-es">Arte</span><span class="lang-en">Art</span></a>
-                        <a href="tienda.html"><span class="lang-es">La tiendita</span><span class="lang-en">Shop</span></a>
-                        <a href="talks.html"><span class="lang-es">Charlas</span><span class="lang-en">Talks</span></a>
-                        <a href="index.html#contact"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a>
-                        <span class="lang-switcher" aria-label="Idioma">
-                            <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
-                            <span class="lang-sep">|</span>
-                            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-                        </span>
-                    </nav>
-                </div>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Maris Botero <span>✦</span></a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#experiencia">IA</a>
+            <a class="active" href="talks.html">Charlas</a>
+            <a href="blog.html">Arte</a>
+            <a href="index.html#playground">Playground</a>
+            <a href="tienda.html">Libros</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <button class="theme-dot" type="button" aria-label="Cambiar detalle mágico">☼</button>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div>
+                <p class="eyebrow-small">Charlas y talleres</p>
+                <h1>Compartir conocimiento también es crear magia.</h1>
+                <p>Conferencias, meetups y espacios donde he hablado de inteligencia artificial, datos, arte generativo, Python, JavaScript, Docker y creatividad computacional.</p>
             </div>
-        </header>
+            <img src="assets/images/bitmoji/talks.svg" alt="" loading="lazy">
+        </section>
 
-        <main class="talks-page">
-            <section class="section">
-                <div class="container">
-                    <h1 class="section-title script-title text-center">
-                        <span class="lang-es">Charlas</span><span class="lang-en">Talks</span>
-                        <span class="title-deco" aria-hidden="true">✦ ✦</span>
-                    </h1>
-                    <p class="section-sub text-center" style="margin-bottom: 2rem;">
-                        <span class="lang-es">Comunidades, conferencias y talleres donde he compartido arte generativo, ML y curiosidad.</span>
-                        <span class="lang-en">Communities, conferences and workshops where I've shared generative art, ML and curiosity.</span>
-                    </p>
+        <section class="section">
+            <div class="talk-grid">
+                <article class="talk-item">
+                    <span>2024</span>
+                    <h2>JSConf México</h2>
+                    <p>Arte generativo y creatividad computacional con JavaScript.</p>
+                    <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/jsconfmexico_MarisBotero%20(1).pdf" target="_blank" rel="noopener">Slides →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2024</span>
+                    <h2>BoyaConf</h2>
+                    <p>Navigating in containers: AI powered by Docker.</p>
+                    <a href="https://www.youtube.com/watch?v=INj8ck8Ilbs" target="_blank" rel="noopener">YouTube →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2024</span>
+                    <h2>PioKids</h2>
+                    <p>Aventura en el mundo del arte mágico.</p>
+                    <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/%C2%A1Aventura%20en%20el%20Mundo%20del%20Arte%20M%C3%A1gico!.pdf" target="_blank" rel="noopener">Slides →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2023</span>
+                    <h2>JSConf Colombia</h2>
+                    <p>Arte generativo y creatividad computacional con JavaScript.</p>
+                    <a href="https://www.youtube.com/watch?v=CjGA5ba5aCc&t=8146s" target="_blank" rel="noopener">YouTube →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2023</span>
+                    <h2>PyConnect Panamá</h2>
+                    <p>Los secretos de la geometría y los fractales con Python.</p>
+                    <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/Los%20secretos%20de%20la%20geometr%C3%ADa%20(2).pdf" target="_blank" rel="noopener">Slides →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2023</span>
+                    <h2>DevFest Cali</h2>
+                    <p>Aprendamos Machine Learning con herramientas de Google.</p>
+                    <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/devfest%20Cali%20%20aprendamos%20Machine%20Learning%20(2).pdf" target="_blank" rel="noopener">Slides →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2022</span>
+                    <h2>DevFest</h2>
+                    <p>Contemos historias con Google Data Studio.</p>
+                    <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/DevFest2022%20%F0%9F%A6%84Contemos%20historias%20con%20Google%20data%20Studio.pdf" target="_blank" rel="noopener">Slides →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2021</span>
+                    <h2>Python Brasil</h2>
+                    <p>Creative Artificial Intelligence with Python.</p>
+                    <a href="https://www.youtube.com/watch?v=AHAQxWoIPJY&t=341s" target="_blank" rel="noopener">YouTube →</a>
+                </article>
+                <article class="talk-item">
+                    <span>2020</span>
+                    <h2>PyCon Bolivia</h2>
+                    <p>Notes and Neurons.</p>
+                    <a href="https://www.youtube.com/watch?v=WxMmjKDMOQc" target="_blank" rel="noopener">YouTube →</a>
+                </article>
+            </div>
+        </section>
+    </main>
 
-                    <ul class="talks-list">
-                        <li>
-                            <span class="talk-year">2024</span>
-                            <span class="talk-row-title">JSConf Mexico</span>
-                            <span class="lang-es">Arte generativo y creatividad computacional con JavaScript.</span>
-                            <span class="lang-en">Generative art and computational creativity with JavaScript.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/jsconfmexico_MarisBotero%20(1).pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2024</span>
-                            <span class="talk-row-title">BoyaConf</span>
-                            <span class="lang-es">Navegando en contenedores: IA potenciada por Docker.</span>
-                            <span class="lang-en">Navigating containers: AI powered by Docker.</span>
-                            <a href="https://www.youtube.com/watch?v=INj8ck8Ilbs" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2024</span>
-                            <span class="talk-row-title">PioKids</span>
-                            <span class="lang-es">Aventura en el mundo del arte mágico.</span>
-                            <span class="lang-en">Adventure in the world of magical art.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/%C2%A1Aventura%20en%20el%20Mundo%20del%20Arte%20M%C3%A1gico!.pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2023</span>
-                            <span class="talk-row-title">🚀 JSConf Colombia</span>
-                            <span class="lang-es">Arte generativo y creatividad computacional con JavaScript.</span>
-                            <span class="lang-en">Generative art and computational creativity with JavaScript.</span>
-                            <a href="https://www.youtube.com/watch?v=CjGA5ba5aCc&t=8146s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2023</span>
-                            <span class="talk-row-title">DevFest Cali</span>
-                            <span class="lang-es">Aprendamos machine learning con herramientas de Google.</span>
-                            <span class="lang-en">Learn machine learning with Google tools.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/devfest%20Cali%20%20aprendamos%20Machine%20Learning%20(2).pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2023</span>
-                            <span class="talk-row-title">PyConnect Panamá</span>
-                            <span class="lang-es">Los secretos de la geometría y los fractales con Python.</span>
-                            <span class="lang-en">Exploring the secrets of geometry and fractals with Python.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/Los%20secretos%20de%20la%20geometr%C3%ADa%20(2).pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2023</span>
-                            <span class="talk-row-title">PyCon Chile</span>
-                            <span class="lang-es">Los secretos de la geometría y los fractales con Python.</span>
-                            <span class="lang-en">Exploring the secrets of geometry and fractals with Python.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/Los%20secretos%20de%20la%20geometr%C3%ADa%20(2).pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2023</span>
-                            <span class="talk-row-title">International Women's Day</span>
-                            <span class="lang-es">Aprendamos machine learning con herramientas de Google.</span>
-                            <span class="lang-en">Learn machine learning with Google tools.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/Aprendamos%20machine%20learning%20con%20herramientas%20de%20google%20(2).pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2022</span>
-                            <span class="talk-row-title">DevFest</span>
-                            <span class="lang-es">Contemos historias con Google Data Studio.</span>
-                            <span class="lang-en">Let's tell stories with Google Data Studio.</span>
-                            <a href="https://github.com/marisbotero/Holi_pyladies/blob/master/DevFest2022%20%F0%9F%A6%84Contemos%20historias%20con%20Google%20data%20Studio.pdf" target="_blank" rel="noopener">
-                                <span class="lang-es">Slides</span><span class="lang-en">Slides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2021</span>
-                            <span class="talk-row-title">Python Brasil</span>
-                            <span class="lang-es">Inteligencia artificial creativa con Python.</span>
-                            <span class="lang-en">Creative Artificial Intelligence with Python.</span>
-                            <a href="https://www.youtube.com/watch?v=AHAQxWoIPJY&t=341s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2021</span>
-                            <span class="talk-row-title">Women in Data Science (WiDS)</span>
-                            <span class="lang-es">PoesIA con inteligencia artificial.</span>
-                            <span class="lang-en">PoesIA with artificial intelligence.</span>
-                            <a href="https://www.youtube.com/watch?v=Fie6NGLHTLs&t=190s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2021</span>
-                            <span class="talk-row-title">Sistema de Bibliotecas — Alcaldía de Medellín</span>
-                            <span class="lang-es">IOT o Internet de las Cosas, una tecnología que ya vive entre nosotros.</span>
-                            <span class="lang-en">IOT or Internet of Things, a technology that already lives among us.</span>
-                            <a href="https://www.youtube.com/watch?v=wLMVdOOQaAk" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2021</span>
-                            <span class="talk-row-title">Magenta Code</span>
-                            <span class="lang-es">Hello Machine Learning.</span>
-                            <span class="lang-en">Hello Machine Learning.</span>
-                            <a href="https://www.youtube.com/watch?v=8ftAOCpm34I&t=2s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2020</span>
-                            <span class="talk-row-title">DevFestCol — Cloud &amp; ML Track</span>
-                            <span class="lang-es">TensorFlow para crear arte, música y dibujo. Introducción a redes neuronales.</span>
-                            <span class="lang-en">Using tools like TensorFlow to create art, music and drawing. Intro to neural networks.</span>
-                            <a href="https://www.youtube.com/watch?v=0Ec-oJTYEec&t=23795s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2020</span>
-                            <span class="talk-row-title">PyCon Bolivia</span>
-                            <span class="lang-es">Notes and Neurons.</span>
-                            <span class="lang-en">Notes and Neurons.</span>
-                            <a href="https://www.youtube.com/watch?v=WxMmjKDMOQc" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2020</span>
-                            <span class="talk-row-title">Python Pereira</span>
-                            <span class="lang-es">Introducción a Deep Learning con Python.</span>
-                            <span class="lang-en">Introduction to Deep Learning with Python.</span>
-                            <a href="https://www.youtube.com/watch?v=RioKpSQOwR0" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                        <li>
-                            <span class="talk-year">2019</span>
-                            <span class="talk-row-title">JSConf Colombia</span>
-                            <span class="lang-es">La máquina del tiempo con JavaScript y Machine Learning.</span>
-                            <span class="lang-en">The time machine with JavaScript and Machine Learning.</span>
-                            <a href="https://www.youtube.com/watch?v=FloCLGCDZBs&t=120s" target="_blank" rel="noopener">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </div>
     <script src="main.js"></script>
 </body>
 
